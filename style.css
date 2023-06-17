@@ -588,7 +588,6 @@ body {
 .trends-cards {
   display: flex;
   justify-content: space-between;
-  width: 100%;
 }
 
 .trends-content {
@@ -943,18 +942,431 @@ body {
   display: none;
 }
 
+.menu-button {
+  display: none;
+}
+
+
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
-  
   .trends-cards {
     display: flex;
-    width: calc((100% - 12px) / 4);
+    width: 100%;
+  }
+  .header {
+    display: flex;
+    width: 100%;
+  }
+
+  .header-title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+  }    
+  
+  .navigation {
+    display: flex;
+    width: 70%;
+    margin-left: 70px;
+  }
+  .menu-list {
+    display: flex;
+    align-items: center;
+  }
+  .products {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+    width: 100%;
   }
 }
 
+
+
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
-  
-  .trends-cards {
-    display: flex;
-    width: calc((100% - 12px) / 2);
+
+    .trends-cards {
+      display: flex;
+      flex-wrap: wrap;
+    
+    }
+    
+    .trends-content {
+      width: calc((100%/2) - 5px);
+      height: 235px;
+      margin-bottom: -25px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 0px;
+      margin-right: 80px;
+      justify-content: flex-start;
+    }
+
+    .product-card {
+      width: 35%;
+    }
+
+      
+    .product-card-image-first {
+      background-image: url(../images/shop-item-tablet1.jpg);
+      background-repeat: no-repeat;
+    }
+      
+    .product-card-image-second {
+      background-image: url(../images/shop-item-tablet2.jpg);
+      background-repeat: no-repeat;
+    }
+    
+    
+    .product-card-image-third {
+      background-image: url(../images/shop-item-tablet3.jpg);
+      background-repeat: no-repeat;
+    }
+    
+    .product-card-content {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      outline: 3px solid #b59f5b;
+      outline-offset: 20px;
+    }
+    
+    .header {
+      background-image: url(../images/banner-bg-tablet.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-color: #000000;
+      position: relative;
+      z-index: 0;
+      display: flex;
+    }
+      
+    .card {
+      max-width: 70%;
+      display: flex;
+      flex-direction: column;
+      margin: 20px 37px 20px;
+      text-align: justify;
+    }
+    
+    .card-header {
+      margin: 18px 0px;
+    }
+    
+    .card-header::after {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 388px;
+      background-color: #eeeeee;
+      margin: 20px auto 40px;
+    }
+    
+    .main-card-sixth {
+      display: none;
+    }
+    
+    .main-card-seventh {
+      display: none;
+    }
+    
+    .menu-button {
+      width: 25px;
+      height: 25px;  
+      border: none;
+      padding: 0px;
+      background-color: transparent;
+      font-size: 25px;
+      position: relative;
+      text-indent: -9999px;
+      cursor: pointer;
+    }
+      
+    .menu-button::before {
+      content:"";
+      width: 23px;
+      height: 4px;
+      background-color: #ffffff;  
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+       
+    .menu-button::after {
+      content:"";
+      width: 23px;
+      height: 4px;
+      background-color: #ffffff;  
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+      
+    .menu-button-label {
+      width: 23px;
+      height: 4px;
+      margin-top: -15px;  
+      background-color: #ffffff;  
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .menu-list {
+      display: none;
+    }
+
+    .footer {
+      width: 100%; 
+    }
+    .footer-container {
+      margin-left: 30px;
+      padding: 0px 20px;
+      width: 100%;
+    }
+
+    .popup_hidden {
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      display: flex;
+      position: fixed;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 2;
+    }
+
+    .popup-container {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }  
+
+    .popup-close {
+      position: absolute;
+      top: 800px;
+      right: 400px;
+      width: 15px;
+      height: 15px;
+      background-image: url(../svg/form-x.svg);
+      background-position: right top;
+      background-repeat: no-repeat;
+      background-color: rgba(0, 0, 0, 0.3);
+      background-size: 15px;
+      border: none;
+    }
+    .popup_hidden {
+      display: none;
+    }
   }
-}
+    
+  @media (max-width: 640px) and (orientation: portrait) {
+
+    .header {
+      background-image: url(../images/banner-mobile.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-color: #000000;
+      position: relative;
+      z-index: 0;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100vw;
+      height: 100vh;
+
+    }
+
+    .header-title {
+      text-align: center;
+      display: flex;
+      width: 90%;
+      align-items: center;
+      margin-left: 40px;
+      margin-right: auto;
+      margin-top: 100px;
+    }    
+
+    .header-logo {
+      width: 90%;
+      display: block;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin-top: 233px;
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-bottom: -35px;
+    }
+    .menu-list {
+      display: none;
+    }
+    .menu-button {
+      width: 25px;
+      height: 25px;  
+      border: none;
+      padding: 0px;
+      background-color: transparent;
+      font-size: 25px;
+      position: relative;
+      text-indent: -9999px;
+      cursor: pointer;
+    }
+      
+    .menu-button::before {
+      content:"";
+      width: 23px;
+      height: 4px;
+      background-color: #ffffff;  
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+       
+    .menu-button::after {
+      content:"";
+      width: 23px;
+      height: 4px;
+      background-color: #ffffff;  
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+      
+    .menu-button-label {
+      width: 23px;
+      height: 4px;
+      margin-top: -15px;  
+      background-color: #ffffff;  
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    
+
+    .trends-cards {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      
+    }
+
+    .trends-content {
+      width: 100%;
+      height: 235px;
+      margin-bottom: -25px;
+    }
+    
+    .news {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 10px;
+      padding-right: 10px;
+      max-width: 90%;
+    }
+
+    .main {
+      width: 100%;
+    }
+
+    .card {
+      display: block;
+      margin: 35px 16px;
+    }
+
+    .card-image {
+      width: 100%;
+    }
+    .card-header {
+      width: 100%;
+      margin: 14px auto;
+    }
+
+    .main-card-sixth {
+      display: none;
+    }
+    
+    .main-card-seventh {
+      display: none;
+    }
+
+    .side-bar {
+      width: 100%;
+    }
+    .side-bar-section {
+      margin: auto;
+    }
+
+    .label {
+      width: 100%;
+    }
+    .field {
+      width: 100%;
+    }
+    .teg-list {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .shop {
+      margin: 43px auto;
+      width: 100%;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+    }
+     
+    .product-card {
+      width: 100%;
+      margin: 24px auto;
+    }
+
+    .product-card-image-first {
+      background-image: url(../images/shop-item-desk1.jpg);
+      background-repeat: no-repeat;
+      width: calc (100% - 30px);
+      
+    }
+    
+    .product-card-image-second {
+      background-image: url(../images/shop-item-desk2.jpg);
+      background-repeat: no-repeat;
+      width: calc (100% - 30px);
+    }
+    
+    .product-card-image-third {
+      background-image: url(../images/shop-item-desk3.jpg);
+      background-repeat: no-repeat;
+      width: calc (100% - 30px);
+    }
+    
+  }
+  
+  @media (max-width: 640px) and (orientation: landscape) {
+   
+    .trends-cards {
+      display: flex;
+      flex-wrap: wrap;
+     
+      
+    }
+
+    .trends-content {
+      width: 100%;
+      height: 235px;
+      margin-bottom: -25px;
+    }
+
+  }
