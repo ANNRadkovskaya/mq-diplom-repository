@@ -92,41 +92,55 @@
   <section class="trends">
     <h2 class="trends-title">cейчас в тренде</h2>
     <div class="trends-cards">
-      <div class="trends-content image-first">
+      <article class="trends-content image-first">
         <div class="trends-card-category">
           <ul class="trends-card-teg">
             <li class="trends-card-teg-item">
               <a class="trends-card-teg-link" href="#0">lifestyle</a>
+            </li>
+            <li>
               <a class="trends-card-teg-link" href="#0">interior</a>
-          <h3 class="trends-card-title">Сейчас в тренде: сад на подоконнике</h3>
+            </li>
+          </ul>
+          <h3 class="trends-card-title"><a class="trends-card-link" href="#0"></a>Сейчас в тренде: сад на подоконнике</h3>
         </div>
-      </div>
-      <div class="trends-content image-second">
+      </article>
+      <article class="trends-content image-second">
         <div class="trends-card-category">
           <ul class="trends-card-teg">
             <li class="trends-card-teg-item">
               <a class="trends-card-teg-link" href="#0">food</a>
-          <h3 class="trends-card-title">Cыры на красивых картинках из интернета: какие они на вкус?</h3>
+            </li>
+          </ul>
+          <h3 class="trends-card-title"><a class="trends-card-link" href="#0"></a>Cыры на красивых картинках из интернета: какие они на вкус?</h3>
         </div>
-      </div>
-      <div class="trends-content image-third">
+      </article>
+      <article class="trends-content image-third">
         <div class="trends-card-category">
           <ul class="trends-card-teg">
             <li class="trends-card-teg-item">
               <a class="trends-card-teg-link" href="#0">lifestyle</a>
+            </li>
+            <li>
               <a class="trends-card-teg-link" href="#0">travel</a>
-          <h3 class="trends-card-title">Собираемся в первый поход в горы</h3>
+            </li>
+          </ul>
+          <h3 class="trends-card-title"><a class="trends-card-link" href="#0"></a>Собираемся в первый поход в горы</h3>
         </div>
-      </div>
-      <div class="trends-content image-four">
+      </article>
+      <article class="trends-content image-four">
         <div class="trends-card-category">
           <ul class="trends-card-teg">
             <li class="trends-card-teg-item">
               <a class="trends-card-teg-link" href="#0">food</a>
+            </li>
+            <li>
               <a class="trends-card-teg-link" href="#0">health</a>
-          <h3 class="trends-card-title">Сейчас в тренде: сколько витамина С в лимонах?</h3>
+            </li>
+          </ul>
+          <h3 class="trends-card-title"><a class="trends-card-link" href="#0"></a>Сейчас в тренде: сколько витамина С в лимонах?</h3>
         </div>
-      </div>
+      </article>
     </div>
   </section>
   
@@ -410,7 +424,12 @@
     <h2 class="shop-title">Наши изделия</h2>
     <div class="products">
       <article class="product-card">
-        <div class="product-card-image-first"><img class="product-card-image" src="images/shop-item-desk1.jpg" alt="картинка с подушкой"></div>
+        <picture class="product-card-image-first">
+          <source media="(min-width: 641px) and (max-width: 1200px) and (orientation: portrait)" srcset="images/shop-item-tablet1.jpg">
+          <source media="(max-width: 640px) and (orientation: portrait)" srcset="images/shop-item-mobile1.jpg">
+          <source media="(max-width: 1201px)" srcset="images/shop-item-desk1.jpg">
+          <img class="product-card-image" src="images/shop-item-desk1.jpg" alt="картинка с подушкой">
+        </picture>
         <div class="product-card-content">
           <h3 class="product-card-title">Подушки на диван</h3>
           <p class="product-card-description">Набор из двух подушек с модными принтами. Видео о создании <a class="product-card-link" href="#0">здесь.</a></p>
@@ -424,7 +443,12 @@
         </div>
       </article>  
       <article class="product-card">
-        <div class="product-card-image-second"><img class="product-card-image" src="images/shop-item-desk2.jpg" alt="картинка с куклой"></div>
+        <picture class="product-card-image-second">
+          <source media="(min-width: 641px) and (max-width: 1200px) and (orientation: portrait)" srcset="images/shop-item-tablet2.jpg">
+          <source media="(max-width: 640px) and (orientation: portrait)" srcset="images/shop-item-mobile2.jpg">
+          <source media="(max-width: 1201px)" srcset="images/shop-item-desk2.jpg">
+          <img class="product-card-image" src="images/shop-item-desk2.jpg" alt="картинка с куклой">
+        </picture>
         <div class="product-card-content">
           <h3 class="product-card-title">Кукла «Зайчик»</h3>
           <p class="product-card-description">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="product-card-link" href="#0">весенняя серия постов</a> в блоге и несколько подкастов.</p>
@@ -437,7 +461,12 @@
         </div>
       </article>
       <article class="product-card">
-        <div class="product-card-image-third"><img class="product-card-image" src="images/shop-item-desk3.jpg" alt="картинка с шестиугольной рамкой"></div>
+        <picture class="product-card-image-third">
+          <source media="(min-width: 641px) and (max-width: 1200px) and (orientation: portrait)" srcset="images/shop-item-tablet3.jpg">
+          <source media="(max-width: 640px) and (orientation: portrait)" srcset="images/shop-item-mobile3.jpg">
+          <source media="(max-width: 1201px)" srcset="images/shop-item-desk3.jpg">
+          <img class="product-card-image" src="images/shop-item-desk3.jpg" alt="картинка с шестиугольной рамкой">
+        </picture>
         <div class="product-card-content">
           <h3 class="product-card-title">Шестиугольная рамка</h3>
           <p class="product-card-description">Необычная рамка для украшения дома из видео <a class="product-card-link" href="#0"> «Как сделать рамку из подручных средств за 30 минут»</a></p>
